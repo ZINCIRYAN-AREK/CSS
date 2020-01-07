@@ -1,0 +1,53 @@
+﻿<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta type="author" content="DEV PHP MYSQL">
+		<meta type="version" content="1.0">
+		<title>Fichier d'exercice TP CSS 03</title>
+		<style>
+            p{ color:blue;}
+            div p {color: red;}
+            div * p {color: green;}
+            body > p {font-style: italic;}
+            body ol>li p {color:purple;}
+            li + li {color: olive}
+            div ~ ul {margin-left: 100px;}
+		</style>
+	</head>
+	<body>
+		<h1>Fichier d'exercice TP CSS 03</h1>
+		<p>Je suis un élément p racine.</p>
+		<div>Je suis un élément div racine.
+			<div>Je suis un élément div enfant d'un élément div racine. 
+				<P> Je suis un élément p, enfant d'un élément div lui-même enfant d'un élément div.
+				</p>
+			je suis la suite de l'élément div enfant d'un élément div.
+			</div>
+		</div>
+		<p>Je suis un élément p racine. 
+        </p>
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+        </ul>
+
+		<div> je suis un div racine
+			<ol>Je suis une liste ordonnée (ol) enfant d'un div.
+				<li>Premier élément li de la liste ordonnée
+					<p>Element p contenu dans le premier élément de liste
+					</p>
+				</li>
+				<li>Deuxième élément de liste 
+				</li>
+				<li>Troisième élément de liste
+				</li>
+			</ol>
+			<p>Elément p contenu dans un élément div
+			</p>
+		</div>
+		<div>Element div racine
+		</div>
+		<div>Dernier élement div racine du document.
+		</div>
+	</body>
+</html>
